@@ -1,23 +1,54 @@
+body{
+  background-color: #F7A028;
+}
 .App {
+  justify-content: center;
+  height: 70vh;
+  display: grid;
+}
+.title{
+  color: #4D4840;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculadora-grid{
+  height: 70vh;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.span-two{
+  grid-column: span 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.salida{
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: .75rem;
+}
+
+.anterior{
+  color: rgba(255, 255, 255, 75%);
+  font-size: 1.5rem;
+}
+
+.despues{
+  color: rgba(255, 255, 255, 75%);
+  font-size: 2.5rem;
+}
+
+.calculadora-grid button{
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 60%);
+}
+
+.calculadora-grid button:hover,
+.calculadora-grid button:focus{
+  background-color: rgba(255, 255, 255, 90%);
 }
