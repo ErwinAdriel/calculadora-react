@@ -1,7 +1,9 @@
 import '../App.css';
 
 export default function Boton ({clickHandle, name, wide}){
-    const handleClick = () => clickHandle(name)
+    const handleClick = () => {
+        clickHandle(name)
+    } 
 
     const className = [
         "component-button",

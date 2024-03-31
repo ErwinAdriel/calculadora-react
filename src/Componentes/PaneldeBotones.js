@@ -3,7 +3,9 @@ import '../App.css';
 
 export default function PaneldeBotones ({clickHandle}){
 
-    const handleClick = nombreDeBoton => clickHandle(nombreDeBoton)
+    const handleClick = nombreDeBoton => {
+        clickHandle(nombreDeBoton)
+    } 
 
     return(
         <div className="component-botonera">

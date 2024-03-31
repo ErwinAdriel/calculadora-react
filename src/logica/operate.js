@@ -11,10 +11,6 @@ export default function operate(numeroUno, numeroDos, operador){
 
     if (operador === "*") return uno.times(dos).toString()
 
-    if (operador === "/") if (dos == "0"){
-        alert("ERROR")
-    }else {
-        return uno.div(dos).toString()
-    }
+    if (operador === "/") return uno.div(dos).toString() 
 
 } 
